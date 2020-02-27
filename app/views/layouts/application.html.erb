@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel='icon' href='favicon-16x16.png' type='image/x-icon'/ >
+<%= favicon_link_tag asset_path('favicon.png') %>
     <title>Recipea</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -16,7 +16,9 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav navbar-right navelement">
-      <li><%= link_to "About", pages_about_path %>
+      <li class="navbarelement"><%= link_to "Home", root_path %>
+      <li><%= link_to "About", pages_about_path %></li>
+
     </ul>
   </div>
 </nav>
