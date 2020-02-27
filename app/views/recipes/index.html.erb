@@ -1,7 +1,12 @@
 <div class=container>
 <p id="notice"><%= notice %></p>
+<div class="plswork">
+<h1 class="headline">What is this website?</h1>
+<p class="tagline">This is Recipea! It's a site to store recipes. Want to add your own recipe? Click the button below!</p>
 
-<h1>Recipes</h1>
+<%= link_to 'Add a Recipe', new_recipe_path, {:class => "newrecipeb"} %>
+</div>
+<h1 class="recipetitle">Recipes</h1>
 <div class="row">
     <% @recipes.each do |recipe| %>
 <div class="col-md-4">
@@ -12,9 +17,9 @@
         <ul class="bg-dark">
         <li><%= recipe.title %></li>
         <li><%= recipe.description %></li>
-        <li><%= link_to 'Show', recipe %> |
+        <li><%= link_to 'View', recipe %> |
         <%= link_to 'Edit', edit_recipe_path(recipe) %> |
-        <%= link_to 'Destroy', recipe, method: :delete, data: { confirm: 'Are you sure?' } %></li>
+        <%= link_to 'Delete Recipe', recipe, method: :delete, data: { confirm: 'Are you sure?' } %></li>
       </ul>
     </div>
   </div>
@@ -25,5 +30,5 @@
   </div>
 
 
-<%= link_to 'New Recipe', new_recipe_path %>
+<%= link_to 'Add a Recipe', new_recipe_path %>
 </div>
