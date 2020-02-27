@@ -6,10 +6,9 @@ img.recipe-show {
 }
 
 .recipe-box {
-	border: 2px solid black;
 	height: 600px;
 	position: relative;
-	background: #696969;
+	background: #212529;
 }
 
 img.recipe-index {
@@ -26,8 +25,47 @@ img.recipe-index {
 
 .recipe-box li:first-child {
 	font-size: 24px;
+	font-weight: bold;
 }
 
 body {
 	background: #121212;
+}
+
+.logoimage {
+	width: 200px;
+	height: auto;
+	padding-left: 0px;
+}
+
+nav {
+	padding-left: 0px;
+}
+
+li {
+	color: white;
+	font-family: Century Gothic;
+}
+
+a {
+	color: #68fd76;
+	font-family: Century Gothic;
+}
+
+a:hover {
+	color: #9affa3;
+}
+
+h1 {
+	font-family: Century Gothic;
+	color: white;
+}
+
+footer {
+	background: #212529;
+	padding-bottom: 0px;
+}
+
+.navelement {
+	padding-left: 10px;
 }
