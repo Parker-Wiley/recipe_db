@@ -5,5 +5,3 @@ storage :fog
 else 
 storage :file
 end
-
-end
