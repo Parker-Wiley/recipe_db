@@ -1,9 +1,9 @@
+<div class="showdiv">
 <p id="notice"><%= notice %></p>
 	<% if @recipe.image? %>
-	<%= image_tag @recipe.image.url, class: "recipe-show" %>
+	<%= image_tag @recipe.image.url, class: "recipe-box show-photo" %>
 	<% end %>
-<p>
-  <strong>Title:</strong>
+<p class="viewtitle">
   <%= @recipe.title %>
 </p>
 
@@ -30,3 +30,4 @@
 
 <%= link_to 'Edit', edit_recipe_path(@recipe) %> |
 <%= link_to 'Back', recipes_path %>
+</div>
