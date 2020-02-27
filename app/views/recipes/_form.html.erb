@@ -12,10 +12,13 @@
     </div>
   <% end %>
 <div class="form-group">
-    <%= form.file_field :image %>
+    
     <% if @recipe.image? %>
+
     <br>
   <%= image_tag @recipe.image.url, class: "recipe-box recipe-container" %>
+  <br>
+        <%= form.file_field :image %>
     <%= form.check_box :remove_image %>
       Remove Image
       <% end %>
@@ -30,7 +33,7 @@
     <%= form.label :description %>
     <%= form.text_area :description %>
   </div>
-
+<br>
 <h3>Add Ingredients</h3>
 <%= form.fields_for :ingredients do |ingredient| %>
 <%= render 'ingredient_fields', f: ingredient %>
@@ -38,7 +41,7 @@
 <div class="links">
 <%= link_to_add_association 'Add Ingredient', form, :ingredients %>
 </div>
-
+<br>
 <h3>Add Steps</h3>
 <%= form.fields_for :steps do |step| %>
 <%= render 'step_fields', f: step %>
@@ -46,9 +49,9 @@
 <div class="links">
 <%= link_to_add_association 'Add Step', form, :steps %>
 </div>
-
+<br>
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit "Apply Changes", :class => "button " %>
   </div>
 </div>
 <% end %>

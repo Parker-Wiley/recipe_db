@@ -126,7 +126,7 @@ h3 {
 }
 
 .centerform {
-	text-align: center;
+	margin-left: 3%;
 }
 
 .field {
@@ -147,7 +147,7 @@ h3 {
 }
 
 .formheader {
-	text-align: center;
+	margin-left: 3%;
 }
 
 .viewtitle {
@@ -167,4 +167,21 @@ h3 {
 
 ol {
 	padding-left: 16px;
+}
+
+.navbottom {
+	margin-left: 3%;
+}
+
+.button {
+	background: #585f66;
+	color: #68fd76;
+	padding: 5px;
+	font-weight: bold;
+	border-radius: 5px;
+	border: 0;
+}
+
+.button:hover {
+	color: #ceffd3;
 }
